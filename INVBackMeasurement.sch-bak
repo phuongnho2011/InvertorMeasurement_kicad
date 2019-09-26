@@ -376,7 +376,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 1350 5100 1100
 $Comp
-L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC3
+L INVBackMeasurement-cache:UImeasurement_HCPL-181-000E IC3
 U 1 1 5D8CB8DF
 P 9800 1000
 F 0 "IC3" H 10200 1265 50  0000 C CNN
@@ -447,7 +447,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 1100 10600 1100
 $Comp
-L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC4
+L INVBackMeasurement-cache:UImeasurement_HCPL-181-000E IC4
 U 1 1 5D9D6A8A
 P 9800 1900
 F 0 "IC4" H 10200 2165 50  0000 C CNN
@@ -511,7 +511,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 2000 10600 2000
 $Comp
-L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC5
+L INVBackMeasurement-cache:UImeasurement_HCPL-181-000E IC5
 U 1 1 5D9E47F4
 P 9800 2750
 F 0 "IC5" H 10200 3015 50  0000 C CNN
@@ -562,7 +562,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3050 9800 3050
 $Comp
-L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC6
+L INVBackMeasurement-cache:UImeasurement_HCPL-181-000E IC6
 U 1 1 5D9F17CF
 P 9800 3550
 F 0 "IC6" H 10200 3815 50  0000 C CNN
@@ -935,7 +935,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 4600 8400 4600
 $Comp
-L INVBackMeasurement-rescue:dsPIC33CK256MP502-UImeasurement U3
+L INVBackMeasurement-cache:UImeasurement_dsPIC33CK256MP502 U3
 U 1 1 5D87DD93
 P 7650 5000
 F 0 "U3" H 7700 5815 50  0000 C CNN
@@ -958,7 +958,7 @@ AVDD
 Text Label 5750 5100 0    50   ~ 0
 3.3VDC
 $Comp
-L INVBackMeasurement-rescue:TC1014-3.0VCT713-UImeasurement IC1
+L INVBackMeasurement-cache:UImeasurement_TC1014-3.0VCT713 IC1
 U 1 1 5DD378A4
 P 6650 3400
 F 0 "IC1" H 7300 3665 50  0000 C CNN
@@ -1015,7 +1015,7 @@ EVENT1
 Wire Wire Line
 	1400 5000 1100 5000
 $Comp
-L INVBackMeasurement-rescue:MCP39F511-UImeasurement U1
+L INVBackMeasurement-cache:UImeasurement_MCP39F511 U1
 U 1 1 5D878282
 P 2050 5250
 F 0 "U1" H 2850 5950 50  0000 L CNN
