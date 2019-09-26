@@ -1,0 +1,1490 @@
+EESchema Schematic File Version 4
+LIBS:INVBackMeasurement-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D861842
+P 1250 1950
+F 0 "J?" H 1168 1625 50  0000 C CNN
+F 1 "PV(DC)" H 1168 1716 50  0000 C CNN
+F 2 "" H 1250 1950 50  0001 C CNN
+F 3 "~" H 1250 1950 50  0001 C CNN
+	1    1250 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L UImeasurement:dsPIC33CK256MP502 U?
+U 1 1 5D87DD93
+P 8150 5000
+F 0 "U?" H 8200 5815 50  0000 C CNN
+F 1 "dsPIC33CK256MP502" H 8200 5724 50  0000 C CNN
+F 2 "" H 8150 5000 50  0001 C CNN
+F 3 "" H 8150 5000 50  0001 C CNN
+	1    8150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D85A6EB
+P 5100 3550
+F 0 "#PWR?" H 5100 3300 50  0001 C CNN
+F 1 "GND" H 5105 3377 50  0000 C CNN
+F 2 "" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8891AA
+P 1850 1650
+F 0 "R?" H 1920 1696 50  0000 L CNN
+F 1 "R" H 1920 1605 50  0000 L CNN
+F 2 "" V 1780 1650 50  0001 C CNN
+F 3 "~" H 1850 1650 50  0001 C CNN
+	1    1850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D889ACD
+P 1850 2200
+F 0 "R?" H 1920 2246 50  0000 L CNN
+F 1 "R" H 1920 2155 50  0000 L CNN
+F 2 "" V 1780 2200 50  0001 C CNN
+F 3 "~" H 1850 2200 50  0001 C CNN
+	1    1850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2500 1850 2500
+Wire Wire Line
+	1850 2500 1850 2350
+Wire Wire Line
+	1450 1950 1450 2500
+Wire Wire Line
+	1450 1400 1850 1400
+Wire Wire Line
+	1850 1400 1850 1500
+Wire Wire Line
+	1450 1400 1450 1850
+Wire Wire Line
+	5100 3550 5100 3400
+Text Label 5100 3400 0    50   ~ 0
+GND
+Connection ~ 1850 2500
+Wire Wire Line
+	7750 5200 7250 5200
+Text Label 6650 5400 0    50   ~ 0
+GND
+Wire Wire Line
+	8650 5400 9050 5400
+Text Label 9700 5600 0    50   ~ 0
+GND
+Text Label 6650 5100 2    50   ~ 0
+3.3VDC
+Text Label 9700 5300 0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	2750 4550 2750 4350
+Wire Wire Line
+	2750 4350 2050 4350
+Connection ~ 2750 4350
+Wire Wire Line
+	2750 4350 2750 4000
+$Comp
+L Device:R R?
+U 1 1 5D89A9CA
+P 1900 4350
+F 0 "R?" V 2107 4350 50  0000 C CNN
+F 1 "R" V 2016 4350 50  0000 C CNN
+F 2 "" V 1830 4350 50  0001 C CNN
+F 3 "~" H 1900 4350 50  0001 C CNN
+	1    1900 4350
+	0    -1   -1   0   
+$EndComp
+Text Label 2750 3700 0    50   ~ 0
+3.3VDC
+$Comp
+L Device:C C?
+U 1 1 5D89F613
+P 3650 6400
+F 0 "C?" H 3765 6446 50  0000 L CNN
+F 1 "C" H 3765 6355 50  0000 L CNN
+F 2 "" H 3688 6250 50  0001 C CNN
+F 3 "~" H 3650 6400 50  0001 C CNN
+	1    3650 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D89FCF7
+P 4050 6400
+F 0 "C?" H 4165 6446 50  0000 L CNN
+F 1 "C" H 4165 6355 50  0000 L CNN
+F 2 "" H 4088 6250 50  0001 C CNN
+F 3 "~" H 4050 6400 50  0001 C CNN
+	1    4050 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 6400 3850 6400
+Wire Wire Line
+	2750 6400 3500 6400
+Wire Wire Line
+	4200 6400 4200 6700
+Wire Wire Line
+	3850 6400 3850 6700
+Connection ~ 3850 6400
+Wire Wire Line
+	3850 6400 3800 6400
+Text Label 4200 6700 0    50   ~ 0
+GND
+Connection ~ 2750 4000
+Wire Wire Line
+	2750 4000 3350 4000
+$Comp
+L Device:C C?
+U 1 1 5D8AEE3B
+P 3500 4000
+F 0 "C?" V 3248 4000 50  0000 C CNN
+F 1 "10uF" V 3339 4000 50  0000 C CNN
+F 2 "" H 3538 3850 50  0001 C CNN
+F 3 "~" H 3500 4000 50  0001 C CNN
+	1    3500 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 4000 3750 4000
+Text Label 4000 4000 0    50   ~ 0
+GND
+Wire Wire Line
+	2950 4550 2950 4300
+Wire Wire Line
+	2950 4300 3350 4300
+$Comp
+L Device:C C?
+U 1 1 5D8B30AB
+P 3500 4300
+F 0 "C?" V 3550 4200 50  0000 C CNN
+F 1 "0.1uF" V 3650 4250 50  0000 C CNN
+F 2 "" H 3538 4150 50  0001 C CNN
+F 3 "~" H 3500 4300 50  0001 C CNN
+	1    3500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8BE47B
+P 4350 5600
+F 0 "C?" H 4465 5646 50  0000 L CNN
+F 1 "33nF" H 4250 5500 50  0000 L CNN
+F 2 "" H 4388 5450 50  0001 C CNN
+F 3 "~" H 4350 5600 50  0001 C CNN
+	1    4350 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8BEBFC
+P 4650 5450
+F 0 "R?" V 4650 5450 50  0000 C CNN
+F 1 "1K" V 4550 5450 50  0000 C CNN
+F 2 "" V 4580 5450 50  0001 C CNN
+F 3 "~" H 4650 5450 50  0001 C CNN
+	1    4650 5450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8BF2CD
+P 4650 6050
+F 0 "R?" V 4650 6050 50  0000 C CNN
+F 1 "1K" V 4750 6050 50  0000 C CNN
+F 2 "" V 4580 6050 50  0001 C CNN
+F 3 "~" H 4650 6050 50  0001 C CNN
+	1    4650 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5450 4500 5450
+Connection ~ 4350 5450
+$Comp
+L Device:L L?
+U 1 1 5D8CD0D5
+P 5050 5450
+F 0 "L?" V 5240 5450 50  0000 C CNN
+F 1 "L" V 5149 5450 50  0000 C CNN
+F 2 "" H 5050 5450 50  0001 C CNN
+F 3 "~" H 5050 5450 50  0001 C CNN
+	1    5050 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5D8CDAD3
+P 5050 6050
+F 0 "L?" V 5000 6050 50  0000 C CNN
+F 1 "L" V 4900 6050 50  0000 C CNN
+F 2 "" H 5050 6050 50  0001 C CNN
+F 3 "~" H 5050 6050 50  0001 C CNN
+	1    5050 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 5450 4900 5450
+Text Label 4600 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	3800 5250 3800 4700
+Wire Wire Line
+	3550 5250 3800 5250
+Text Label 4750 4400 0    50   ~ 0
+GND
+$Comp
+L Device:R R?
+U 1 1 5D8FB6CD
+P 4850 4700
+F 0 "R?" V 4643 4700 50  0000 C CNN
+F 1 "499K" V 4734 4700 50  0000 C CNN
+F 2 "" V 4780 4700 50  0001 C CNN
+F 3 "~" H 4850 4700 50  0001 C CNN
+	1    4850 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8FDB55
+P 5150 4700
+F 0 "R?" V 4943 4700 50  0000 C CNN
+F 1 "499K" V 5034 4700 50  0000 C CNN
+F 2 "" V 5080 4700 50  0001 C CNN
+F 3 "~" H 5150 4700 50  0001 C CNN
+	1    5150 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4700 5450 4700
+$Comp
+L Device:L L?
+U 1 1 5D911336
+P 5600 4700
+F 0 "L?" V 5790 4700 50  0000 C CNN
+F 1 "L" V 5699 4700 50  0000 C CNN
+F 2 "" H 5600 4700 50  0001 C CNN
+F 3 "~" H 5600 4700 50  0001 C CNN
+	1    5600 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4700 5900 4700
+Text Label 4750 5000 0    50   ~ 0
+GND
+Text Label 5900 4700 0    50   ~ 0
+AC\N
+Text Label 2650 6600 2    50   ~ 0
+3.3VDC
+Wire Wire Line
+	2750 6400 2750 6850
+Connection ~ 2750 6400
+Text Label 2750 6850 0    50   ~ 0
+AVDD
+Wire Wire Line
+	1750 4350 1400 4350
+Text Label 1400 4350 0    50   ~ 0
+AVDD
+Wire Wire Line
+	2750 3700 2750 3800
+Wire Wire Line
+	2850 4550 2850 4450
+Wire Wire Line
+	3550 5050 3550 4500
+Text Label 3550 4500 0    50   ~ 0
+GND
+Wire Wire Line
+	8650 5200 9050 5200
+Wire Wire Line
+	8650 5100 9050 5100
+Text Label 9050 5200 2    50   ~ 0
+RXMCU
+Text Label 9050 5100 2    50   ~ 0
+TXMCU
+Text Label 2850 6700 0    50   ~ 0
+RX
+Text Label 1400 5350 0    50   ~ 0
+TX
+$Comp
+L Device:C C?
+U 1 1 5D99A7A9
+P 6850 5250
+F 0 "C?" H 6965 5296 50  0000 L CNN
+F 1 "C" H 6965 5205 50  0000 L CNN
+F 2 "" H 6888 5100 50  0001 C CNN
+F 3 "~" H 6850 5250 50  0001 C CNN
+	1    6850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5100 7750 5100
+Wire Wire Line
+	6850 5100 6650 5100
+Connection ~ 6850 5100
+Wire Wire Line
+	7250 5200 7250 5400
+Wire Wire Line
+	7250 5400 6850 5400
+Wire Wire Line
+	6850 5400 6650 5400
+Connection ~ 6850 5400
+$Comp
+L Device:C C?
+U 1 1 5D9A5EDE
+P 6850 4850
+F 0 "C?" H 6965 4896 50  0000 L CNN
+F 1 "C" H 6965 4805 50  0000 L CNN
+F 2 "" H 6888 4700 50  0001 C CNN
+F 3 "~" H 6850 4850 50  0001 C CNN
+	1    6850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5000 7750 5000
+Wire Wire Line
+	7750 4900 7200 4900
+Wire Wire Line
+	7200 4900 7200 4700
+Wire Wire Line
+	7200 4700 6850 4700
+Connection ~ 6850 4700
+Wire Wire Line
+	6550 5000 6850 5000
+Connection ~ 6850 5000
+Wire Wire Line
+	6550 4700 6850 4700
+Text Label 6550 4700 0    50   ~ 0
+3.3VDC
+Text Label 6550 5000 0    50   ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 5D9B94F9
+P 9350 5450
+F 0 "C?" H 9465 5496 50  0000 L CNN
+F 1 "C" H 9465 5405 50  0000 L CNN
+F 2 "" H 9388 5300 50  0001 C CNN
+F 3 "~" H 9350 5450 50  0001 C CNN
+	1    9350 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5400 9050 5600
+Wire Wire Line
+	9050 5600 9350 5600
+Wire Wire Line
+	8650 5300 9350 5300
+Wire Wire Line
+	9350 5300 9700 5300
+Connection ~ 9350 5300
+Wire Wire Line
+	9350 5600 9700 5600
+Connection ~ 9350 5600
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D9CBA8F
+P 9350 4600
+F 0 "SW?" H 9350 4885 50  0000 C CNN
+F 1 "RESET" H 9350 4794 50  0000 C CNN
+F 2 "" H 9350 4800 50  0001 C CNN
+F 3 "~" H 9350 4800 50  0001 C CNN
+	1    9350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4600 8850 4600
+Wire Wire Line
+	9550 4600 9900 4600
+$Comp
+L Device:C C?
+U 1 1 5D9D3019
+P 9900 4850
+F 0 "C?" H 10015 4896 50  0000 L CNN
+F 1 "C" H 10015 4805 50  0000 L CNN
+F 2 "" H 9938 4700 50  0001 C CNN
+F 3 "~" H 9900 4850 50  0001 C CNN
+	1    9900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4700 9900 4600
+Wire Wire Line
+	9900 5000 10350 5000
+Text Label 10350 5000 0    50   ~ 0
+GND
+Connection ~ 8850 4600
+Wire Wire Line
+	8850 4600 9150 4600
+$Comp
+L Device:R R?
+U 1 1 5D9DDE4D
+P 8850 4250
+F 0 "R?" H 8920 4296 50  0000 L CNN
+F 1 "R" H 8920 4205 50  0000 L CNN
+F 2 "" V 8780 4250 50  0001 C CNN
+F 3 "~" H 8850 4250 50  0001 C CNN
+	1    8850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4100 8850 3950
+Wire Wire Line
+	8850 3950 9100 3950
+Text Label 9100 3950 0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	8650 4800 8950 4800
+Wire Wire Line
+	8650 4900 8950 4900
+Wire Wire Line
+	8650 4700 8950 4700
+Text Label 8950 4700 0    50   ~ 0
+VPP
+Text Label 8950 4800 0    50   ~ 0
+GPD
+Text Label 8950 4900 0    50   ~ 0
+GPC
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 5D9F7F18
+P 10450 4200
+F 0 "J?" H 10558 4581 50  0000 C CNN
+F 1 "DEBUGER" H 10558 4490 50  0000 C CNN
+F 2 "" H 10450 4200 50  0001 C CNN
+F 3 "~" H 10450 4200 50  0001 C CNN
+	1    10450 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4000 9950 4000
+Text Label 9950 4100 0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	10250 4100 9950 4100
+Text Label 9950 4000 0    50   ~ 0
+VPP
+Wire Wire Line
+	10250 4200 9950 4200
+Text Label 9950 4200 0    50   ~ 0
+GND
+Wire Wire Line
+	10250 4300 9950 4300
+Text Label 9950 4300 0    50   ~ 0
+GPD
+Wire Wire Line
+	10250 4400 9950 4400
+Text Label 9950 4400 0    50   ~ 0
+GPC
+$Comp
+L Device:Crystal Y?
+U 1 1 5DA681B6
+P 1550 5700
+F 0 "Y?" V 1504 5831 50  0000 L CNN
+F 1 "Crystal" V 1595 5831 50  0000 L CNN
+F 2 "" H 1550 5700 50  0001 C CNN
+F 3 "~" H 1550 5700 50  0001 C CNN
+	1    1550 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 5550 1550 5550
+Wire Wire Line
+	1900 5850 1550 5850
+Wire Wire Line
+	1550 5850 1550 6000
+Connection ~ 1550 5850
+$Comp
+L Device:C C?
+U 1 1 5DA76444
+P 1550 6150
+F 0 "C?" H 1665 6196 50  0000 L CNN
+F 1 "C" H 1665 6105 50  0000 L CNN
+F 2 "" H 1588 6000 50  0001 C CNN
+F 3 "~" H 1550 6150 50  0001 C CNN
+	1    1550 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6300 1550 6450
+Text Label 1550 6450 0    50   ~ 0
+GND
+Wire Wire Line
+	1550 5550 1200 5550
+Wire Wire Line
+	1200 5550 1200 6000
+Connection ~ 1550 5550
+$Comp
+L Device:C C?
+U 1 1 5DA815F8
+P 1200 6150
+F 0 "C?" H 1315 6196 50  0000 L CNN
+F 1 "C" H 1315 6105 50  0000 L CNN
+F 2 "" H 1238 6000 50  0001 C CNN
+F 3 "~" H 1200 6150 50  0001 C CNN
+	1    1200 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6300 1200 6450
+$Comp
+L Device:C C?
+U 1 1 5D8BDFF1
+P 4350 5900
+F 0 "C?" H 4465 5946 50  0000 L CNN
+F 1 "33nF" H 4465 5855 50  0000 L CNN
+F 2 "" H 4388 5750 50  0001 C CNN
+F 3 "~" H 4350 5900 50  0001 C CNN
+	1    4350 5900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 6050 4050 6050
+Wire Wire Line
+	4050 6050 4050 5550
+Wire Wire Line
+	4050 5550 3550 5550
+Wire Wire Line
+	3550 5450 4350 5450
+Wire Wire Line
+	4600 5750 4350 5750
+Connection ~ 4350 5750
+$Comp
+L Device:R_Shunt R?
+U 1 1 5DAD423A
+P 5500 5750
+F 0 "R?" H 5412 5704 50  0000 R CNN
+F 1 "2m" H 5412 5795 50  0000 R CNN
+F 2 "" V 5430 5750 50  0001 C CNN
+F 3 "~" H 5500 5750 50  0001 C CNN
+	1    5500 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 6050 5350 5850
+Wire Wire Line
+	5200 5450 5350 5450
+Wire Wire Line
+	5350 5450 5350 5650
+Wire Wire Line
+	5500 5950 5800 5950
+Wire Wire Line
+	5500 5550 5800 5550
+Text Label 5800 5950 0    50   ~ 0
+AC\L
+Text Label 5800 5550 0    50   ~ 0
+AC\L_OUT
+Wire Wire Line
+	1900 5450 1550 5450
+Text Label 2950 6300 1    50   ~ 0
+PT1
+Text Label 1550 5450 0    50   ~ 0
+PT1
+Wire Wire Line
+	5200 6050 5350 6050
+Wire Wire Line
+	4800 6050 4900 6050
+Wire Wire Line
+	4500 6050 4350 6050
+Connection ~ 4350 6050
+$Comp
+L Device:R R?
+U 1 1 5DBA2794
+P 9300 6050
+F 0 "R?" H 9370 6096 50  0000 L CNN
+F 1 "R" H 9370 6005 50  0000 L CNN
+F 2 "" V 9230 6050 50  0001 C CNN
+F 3 "~" H 9300 6050 50  0001 C CNN
+	1    9300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DBA2DF8
+P 9550 6050
+F 0 "R?" H 9620 6096 50  0000 L CNN
+F 1 "R" H 9620 6005 50  0000 L CNN
+F 2 "" V 9480 6050 50  0001 C CNN
+F 3 "~" H 9550 6050 50  0001 C CNN
+	1    9550 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5900 9550 5900
+Connection ~ 9550 5900
+Wire Wire Line
+	9550 5900 9800 5900
+Text Label 9800 5900 0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	9300 6200 9300 6350
+Wire Wire Line
+	9550 6200 9550 6350
+Text Label 9550 6350 0    50   ~ 0
+RXMCU
+Text Label 9300 6350 2    50   ~ 0
+TXMCU
+Wire Wire Line
+	7750 5800 7450 5800
+Wire Wire Line
+	7750 5700 7450 5700
+Wire Wire Line
+	7750 5600 7450 5600
+Wire Wire Line
+	7750 5500 7450 5500
+Text Label 7450 5500 0    50   ~ 0
+MISO
+Text Label 7450 5600 0    50   ~ 0
+MOSI
+Text Label 7450 5700 0    50   ~ 0
+SCK
+Text Label 7450 5800 0    50   ~ 0
+~SS
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5DBCE3FF
+P 7250 5600
+F 0 "J?" H 7358 5881 50  0000 C CNN
+F 1 "SPI" H 7350 5300 50  0000 C CNN
+F 2 "" H 7250 5600 50  0001 C CNN
+F 3 "~" H 7250 5600 50  0001 C CNN
+	1    7250 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 1950
+Wire Wire Line
+	1850 1950 1850 1800
+Wire Wire Line
+	1850 2050 1850 1950
+Wire Wire Line
+	2500 2500 3600 2500
+Wire Wire Line
+	2500 1950 2500 2500
+Wire Wire Line
+	1850 1950 2500 1950
+Text Label 3350 2300 0    50   ~ 0
+GND
+Wire Wire Line
+	2500 1700 2200 1700
+Wire Wire Line
+	2500 1600 2200 1600
+Wire Wire Line
+	2200 1600 2200 1700
+Connection ~ 2200 1700
+Connection ~ 1850 1400
+Wire Wire Line
+	2200 1400 2500 1400
+Wire Wire Line
+	2200 1500 2500 1500
+Connection ~ 2200 1400
+Wire Wire Line
+	1850 1400 2200 1400
+Wire Wire Line
+	2200 1400 2200 1500
+Wire Wire Line
+	3300 1500 4300 1500
+Wire Wire Line
+	3350 2150 3800 2150
+Connection ~ 3350 2150
+Wire Wire Line
+	3350 2150 3350 2300
+Wire Wire Line
+	3800 2150 3800 2100
+Wire Wire Line
+	2900 2150 3350 2150
+Wire Wire Line
+	2900 2000 2900 2150
+Wire Wire Line
+	3800 1600 3800 1800
+$Comp
+L Device:C C?
+U 1 1 5D859CA2
+P 3800 1950
+F 0 "C?" H 3915 1996 50  0000 L CNN
+F 1 "C" H 3915 1905 50  0000 L CNN
+F 2 "" H 3838 1800 50  0001 C CNN
+F 3 "~" H 3800 1950 50  0001 C CNN
+	1    3800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1600 3800 1600
+$Comp
+L dk_Current-Sensors:ACS712ELCTR-20A-T_NRND U?
+U 1 1 5D857F1D
+P 2900 1500
+F 0 "U?" H 2900 2103 60  0000 C CNN
+F 1 "ACS712ELCTR-20A-T_NRND" H 2900 1997 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 3100 1700 60  0001 L CNN
+F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" H 3100 1800 60  0001 L CNN
+F 4 "620-1190-1-ND" H 3100 1900 60  0001 L CNN "Digi-Key_PN"
+F 5 "ACS712ELCTR-20A-T" H 3100 2000 60  0001 L CNN "MPN"
+F 6 "Sensors, Transducers" H 3100 2100 60  0001 L CNN "Category"
+F 7 "Current Sensors" H 3100 2200 60  0001 L CNN "Family"
+F 8 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" H 3100 2300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/allegro-microsystems-llc/ACS712ELCTR-20A-T/620-1190-1-ND/1284607" H 3100 2400 60  0001 L CNN "DK_Detail_Page"
+F 10 "SENSOR CURRENT HALL 20A AC/DC" H 3100 2500 60  0001 L CNN "Description"
+F 11 "Allegro MicroSystems, LLC" H 3100 2600 60  0001 L CNN "Manufacturer"
+F 12 "Not For New Designs" H 3100 2700 60  0001 L CNN "Status"
+	1    2900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2700 3600 2700
+Wire Wire Line
+	2200 1700 2200 2700
+Wire Wire Line
+	1850 2800 3600 2800
+Wire Wire Line
+	1850 2500 1850 2800
+Text Label 3600 2700 0    50   ~ 0
+STRINGDC+
+Text Label 3600 2800 0    50   ~ 0
+STRINGDC-
+Text Label 4500 2150 2    50   ~ 0
+STRINGDC+
+Text Label 4500 2250 2    50   ~ 0
+STRINGDC-
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DC87F5B
+P 4700 2150
+F 0 "J?" H 4780 2142 50  0000 L CNN
+F 1 "STRINGTOINVERTER" H 4780 2051 50  0000 L CNN
+F 2 "" H 4700 2150 50  0001 C CNN
+F 3 "~" H 4700 2150 50  0001 C CNN
+	1    4700 2150
+	1    0    0    -1  
+$EndComp
+Text Label 3600 2500 0    50   ~ 0
+VOLTDC
+Wire Wire Line
+	8650 5700 9000 5700
+Wire Wire Line
+	9000 5700 9000 5800
+Wire Wire Line
+	9000 5800 9100 5800
+Text Label 9100 5800 0    50   ~ 0
+VOLTDC
+$Comp
+L power:GND #PWR?
+U 1 1 5DCAE7A2
+P 1850 2950
+F 0 "#PWR?" H 1850 2700 50  0001 C CNN
+F 1 "GND" H 1855 2777 50  0000 C CNN
+F 2 "" H 1850 2950 50  0001 C CNN
+F 3 "" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2950 1850 2800
+Connection ~ 1850 2800
+$Comp
+L Device:R R?
+U 1 1 5DCB60C8
+P 4450 1100
+F 0 "R?" V 4243 1100 50  0000 C CNN
+F 1 "R" V 4334 1100 50  0000 C CNN
+F 2 "" V 4380 1100 50  0001 C CNN
+F 3 "~" H 4450 1100 50  0001 C CNN
+	1    4450 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 1100 3700 1100
+$Comp
+L Device:LED D?
+U 1 1 5DCC720F
+P 4800 1100
+F 0 "D?" H 4793 845 50  0000 C CNN
+F 1 "LED" H 4793 936 50  0000 C CNN
+F 2 "" H 4800 1100 50  0001 C CNN
+F 3 "~" H 4800 1100 50  0001 C CNN
+	1    4800 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 1100 4600 1100
+Wire Wire Line
+	3700 1100 3700 800 
+Connection ~ 3700 1100
+Wire Wire Line
+	3700 1100 4100 1100
+Text Label 3700 800  0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	4950 1100 5100 1100
+Wire Wire Line
+	4100 1100 4100 1350
+Wire Wire Line
+	4100 1350 4500 1350
+Connection ~ 4100 1100
+Wire Wire Line
+	4100 1100 4300 1100
+$Comp
+L Device:C C?
+U 1 1 5DCEC3DE
+P 4650 1350
+F 0 "C?" V 4500 1350 50  0000 C CNN
+F 1 "C" V 4400 1350 50  0000 C CNN
+F 2 "" H 4688 1200 50  0001 C CNN
+F 3 "~" H 4650 1350 50  0001 C CNN
+	1    4650 1350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4800 1350 5100 1350
+Wire Wire Line
+	5100 1350 5100 1100
+Connection ~ 5100 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5DD057D9
+P 5100 1600
+F 0 "#PWR?" H 5100 1350 50  0001 C CNN
+F 1 "GND" H 5105 1427 50  0000 C CNN
+F 2 "" H 5100 1600 50  0001 C CNN
+F 3 "" H 5100 1600 50  0001 C CNN
+	1    5100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1350 5100 1600
+Wire Wire Line
+	3650 4300 3750 4300
+Wire Wire Line
+	3750 4300 3750 4150
+Connection ~ 3750 4000
+Wire Wire Line
+	3750 4000 4000 4000
+Wire Wire Line
+	2850 4150 3750 4150
+Connection ~ 3750 4150
+Wire Wire Line
+	3750 4150 3750 4000
+Wire Wire Line
+	1200 6450 1550 6450
+Wire Wire Line
+	3850 6700 4200 6700
+Wire Wire Line
+	2550 4550 2550 4450
+Wire Wire Line
+	2550 4450 2850 4450
+Connection ~ 2850 4450
+Wire Wire Line
+	2850 4450 2850 4150
+Wire Wire Line
+	2350 4550 2350 4450
+Wire Wire Line
+	2350 4450 2550 4450
+Connection ~ 2550 4450
+Wire Wire Line
+	3550 5350 4200 5350
+Wire Wire Line
+	4200 5350 4500 5350
+Connection ~ 4200 5350
+Connection ~ 4500 4700
+Wire Wire Line
+	4500 4700 4700 4700
+Connection ~ 4200 4700
+Wire Wire Line
+	4200 4700 4500 4700
+Wire Wire Line
+	3800 4700 4200 4700
+$Comp
+L Device:R R?
+U 1 1 5D91574F
+P 4500 5200
+F 0 "R?" H 4570 5246 50  0000 L CNN
+F 1 "R" H 4570 5155 50  0000 L CNN
+F 2 "" V 4430 5200 50  0001 C CNN
+F 3 "~" H 4500 5200 50  0001 C CNN
+	1    4500 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D914A32
+P 4200 5200
+F 0 "C?" H 4315 5246 50  0000 L CNN
+F 1 "33nF" H 4315 5155 50  0000 L CNN
+F 2 "" H 4238 5050 50  0001 C CNN
+F 3 "~" H 4200 5200 50  0001 C CNN
+	1    4200 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8F64B6
+P 4500 4850
+F 0 "R?" H 4570 4896 50  0000 L CNN
+F 1 "1K" H 4570 4805 50  0000 L CNN
+F 2 "" V 4430 4850 50  0001 C CNN
+F 3 "~" H 4500 4850 50  0001 C CNN
+	1    4500 4850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8F589C
+P 4200 4850
+F 0 "C?" H 4315 4896 50  0000 L CNN
+F 1 "33nF" H 4315 4805 50  0000 L CNN
+F 2 "" H 4238 4700 50  0001 C CNN
+F 3 "~" H 4200 4850 50  0001 C CNN
+	1    4200 4850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4200 5000 4200 5050
+Wire Wire Line
+	4500 5050 4500 5000
+Wire Wire Line
+	4500 5000 4750 5000
+Connection ~ 4500 5000
+Wire Wire Line
+	4200 5000 4500 5000
+Connection ~ 4200 5000
+Wire Wire Line
+	2650 4550 2650 4100
+$Comp
+L UImeasurement:HCPL-181-000E IC?
+U 1 1 5D8CB8DF
+P 9800 1000
+F 0 "IC?" H 10200 1265 50  0000 C CNN
+F 1 "HCPL-181-000E" H 10200 1174 50  0000 C CNN
+F 2 "SOP254P675X240-4N" H 10450 1100 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/AV02-0774EN" H 10450 1000 50  0001 L CNN
+F 4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" H 10450 900 50  0001 L CNN "Description"
+F 5 "2.4" H 10450 800 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 10450 700 50  0001 L CNN "Manufacturer_Name"
+F 7 "HCPL-181-000E" H 10450 600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "630-HCPL-181-000E" H 10450 500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=630-HCPL-181-000E" H 10450 400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6935277P" H 10450 300 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/6935277P" H 10450 200 50  0001 L CNN "RS Price/Stock"
+	1    9800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6050 2950 6300
+Wire Wire Line
+	2750 6050 2750 6400
+Wire Wire Line
+	2650 6050 2650 6600
+Wire Wire Line
+	1900 5650 1900 5850
+$Comp
+L UImeasurement:MCP39F511 U?
+U 1 1 5D878282
+P 2550 5300
+F 0 "U?" H 3350 6000 50  0000 L CNN
+F 1 "MCP39F511" H 3200 4600 50  0000 L CNN
+F 2 "" H 2450 5300 50  0001 C CNN
+F 3 "" H 2450 5300 50  0001 C CNN
+	1    2550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5050 1600 5050
+Text Label 1600 5050 0    50   ~ 0
+EVENT1
+Wire Wire Line
+	3550 5650 3850 5650
+Text Label 3850 5650 2    50   ~ 0
+EVENT2
+Wire Wire Line
+	3050 6050 3050 6350
+Text Label 3050 6350 0    50   ~ 0
+PWM
+Wire Wire Line
+	3050 4550 3050 3800
+Text Label 3050 3800 0    50   ~ 0
+ZCD
+$Comp
+L Device:R R?
+U 1 1 5D935AD0
+P 2650 3950
+F 0 "R?" H 2500 4000 50  0000 L CNN
+F 1 "4.7K" H 2400 3900 50  0000 L CNN
+F 2 "" V 2580 3950 50  0001 C CNN
+F 3 "~" H 2650 3950 50  0001 C CNN
+	1    2650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3800 2750 3800
+Connection ~ 2750 3800
+Wire Wire Line
+	2750 3800 2750 4000
+$Comp
+L Device:R R?
+U 1 1 5D94B706
+P 9400 750
+F 0 "R?" H 9470 796 50  0000 L CNN
+F 1 "R" H 9470 705 50  0000 L CNN
+F 2 "" V 9330 750 50  0001 C CNN
+F 3 "~" H 9400 750 50  0001 C CNN
+	1    9400 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D94C727
+P 9800 750
+F 0 "R?" H 9870 796 50  0000 L CNN
+F 1 "R" H 9870 705 50  0000 L CNN
+F 2 "" V 9730 750 50  0001 C CNN
+F 3 "~" H 9800 750 50  0001 C CNN
+	1    9800 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 900  9800 1000
+Wire Wire Line
+	9800 1100 9800 1300
+Text Label 9800 1300 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 600  9400 600 
+Connection ~ 9400 600 
+Wire Wire Line
+	9400 600  8650 600 
+Text Label 8650 600  0    50   ~ 0
+EVENT1
+Wire Wire Line
+	9400 1300 9800 1300
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D99238B
+P 11000 1100
+F 0 "J?" H 11108 1281 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 11108 1190 50  0000 C CNN
+F 2 "" H 11000 1100 50  0001 C CNN
+F 3 "~" H 11000 1100 50  0001 C CNN
+	1    11000 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10800 1000 10600 1000
+Wire Wire Line
+	10800 1100 10600 1100
+$Comp
+L UImeasurement:HCPL-181-000E IC?
+U 1 1 5D9D6A8A
+P 9800 1900
+F 0 "IC?" H 10200 2165 50  0000 C CNN
+F 1 "HCPL-181-000E" H 10200 2074 50  0000 C CNN
+F 2 "SOP254P675X240-4N" H 10450 2000 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/AV02-0774EN" H 10450 1900 50  0001 L CNN
+F 4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" H 10450 1800 50  0001 L CNN "Description"
+F 5 "2.4" H 10450 1700 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 10450 1600 50  0001 L CNN "Manufacturer_Name"
+F 7 "HCPL-181-000E" H 10450 1500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "630-HCPL-181-000E" H 10450 1400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=630-HCPL-181-000E" H 10450 1300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6935277P" H 10450 1200 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/6935277P" H 10450 1100 50  0001 L CNN "RS Price/Stock"
+	1    9800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9D6A90
+P 9400 1650
+F 0 "R?" H 9470 1696 50  0000 L CNN
+F 1 "R" H 9470 1605 50  0000 L CNN
+F 2 "" V 9330 1650 50  0001 C CNN
+F 3 "~" H 9400 1650 50  0001 C CNN
+	1    9400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9D6A96
+P 9800 1650
+F 0 "R?" H 9870 1696 50  0000 L CNN
+F 1 "R" H 9870 1605 50  0000 L CNN
+F 2 "" V 9730 1650 50  0001 C CNN
+F 3 "~" H 9800 1650 50  0001 C CNN
+	1    9800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1800 9800 1900
+Wire Wire Line
+	9800 2000 9800 2200
+Text Label 9800 2200 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 1500 9400 1500
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D9D6AA5
+P 11000 2000
+F 0 "J?" H 11108 2181 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 11108 2090 50  0000 C CNN
+F 2 "" H 11000 2000 50  0001 C CNN
+F 3 "~" H 11000 2000 50  0001 C CNN
+	1    11000 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10800 1900 10600 1900
+Wire Wire Line
+	10800 2000 10600 2000
+$Comp
+L UImeasurement:HCPL-181-000E IC?
+U 1 1 5D9E47F4
+P 9800 2750
+F 0 "IC?" H 10200 3015 50  0000 C CNN
+F 1 "HCPL-181-000E" H 10200 2924 50  0000 C CNN
+F 2 "SOP254P675X240-4N" H 10450 2850 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/AV02-0774EN" H 10450 2750 50  0001 L CNN
+F 4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" H 10450 2650 50  0001 L CNN "Description"
+F 5 "2.4" H 10450 2550 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 10450 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "HCPL-181-000E" H 10450 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "630-HCPL-181-000E" H 10450 2250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=630-HCPL-181-000E" H 10450 2150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6935277P" H 10450 2050 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/6935277P" H 10450 1950 50  0001 L CNN "RS Price/Stock"
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9E47FA
+P 9400 2500
+F 0 "R?" H 9470 2546 50  0000 L CNN
+F 1 "R" H 9470 2455 50  0000 L CNN
+F 2 "" V 9330 2500 50  0001 C CNN
+F 3 "~" H 9400 2500 50  0001 C CNN
+	1    9400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9E4800
+P 9800 2500
+F 0 "R?" H 9870 2546 50  0000 L CNN
+F 1 "R" H 9870 2455 50  0000 L CNN
+F 2 "" V 9730 2500 50  0001 C CNN
+F 3 "~" H 9800 2500 50  0001 C CNN
+	1    9800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2650 9800 2750
+Wire Wire Line
+	9800 2850 9800 3050
+Text Label 9800 3050 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 2350 9400 2350
+Wire Wire Line
+	9400 3050 9800 3050
+$Comp
+L UImeasurement:HCPL-181-000E IC?
+U 1 1 5D9F17CF
+P 9800 3550
+F 0 "IC?" H 10200 3815 50  0000 C CNN
+F 1 "HCPL-181-000E" H 10200 3724 50  0000 C CNN
+F 2 "SOP254P675X240-4N" H 10450 3650 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/AV02-0774EN" H 10450 3550 50  0001 L CNN
+F 4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" H 10450 3450 50  0001 L CNN "Description"
+F 5 "2.4" H 10450 3350 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 10450 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "HCPL-181-000E" H 10450 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "630-HCPL-181-000E" H 10450 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=630-HCPL-181-000E" H 10450 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6935277P" H 10450 2850 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/6935277P" H 10450 2750 50  0001 L CNN "RS Price/Stock"
+	1    9800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9F17D5
+P 9400 3300
+F 0 "R?" H 9470 3346 50  0000 L CNN
+F 1 "R" H 9470 3255 50  0000 L CNN
+F 2 "" V 9330 3300 50  0001 C CNN
+F 3 "~" H 9400 3300 50  0001 C CNN
+	1    9400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9F17DB
+P 9800 3300
+F 0 "R?" H 9870 3346 50  0000 L CNN
+F 1 "R" H 9870 3255 50  0000 L CNN
+F 2 "" V 9730 3300 50  0001 C CNN
+F 3 "~" H 9800 3300 50  0001 C CNN
+	1    9800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3450 9800 3550
+Wire Wire Line
+	9800 3650 9800 3850
+Text Label 9800 3850 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 3150 9400 3150
+Wire Wire Line
+	9400 3850 9800 3850
+Wire Wire Line
+	10800 3550 10600 3550
+Connection ~ 9400 3150
+Connection ~ 9400 2350
+Connection ~ 9400 1500
+Text Label 8650 3150 0    50   ~ 0
+TX
+Wire Wire Line
+	9400 3150 8650 3150
+Text Label 8650 2350 0    50   ~ 0
+PWD
+Wire Wire Line
+	9400 2350 8650 2350
+Text Label 8650 1500 0    50   ~ 0
+EVENT2
+Wire Wire Line
+	9400 1500 8650 1500
+Text Label 6050 750  0    50   ~ 0
+AC\L
+Wire Wire Line
+	6450 750  6050 750 
+Wire Wire Line
+	6450 850  6050 850 
+Text Label 7100 1550 0    50   ~ 0
+AC\N
+Text Label 7100 1350 0    50   ~ 0
+AC\L
+Wire Wire Line
+	6800 1550 7100 1550
+Wire Wire Line
+	6800 1350 7100 1350
+Text Label 6050 850  0    50   ~ 0
+AC\N
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D863D99
+P 6650 750
+F 0 "J?" H 6730 742 50  0000 L CNN
+F 1 "PV(AC)" H 6730 651 50  0000 L CNN
+F 2 "" H 6650 750 50  0001 C CNN
+F 3 "~" H 6650 750 50  0001 C CNN
+	1    6650 750 
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1550 0    50   ~ 0
+GND
+Wire Wire Line
+	6000 1550 5650 1550
+Text Label 5600 1350 0    50   ~ 0
+3.3VDC
+Wire Wire Line
+	6000 1350 5600 1350
+$Comp
+L Converter_ACDC:IRM-02-3.3S PS?
+U 1 1 5D8254F2
+P 6400 1450
+F 0 "PS?" H 6400 1775 50  0000 C CNN
+F 1 "IRM-02-3.3S" H 6400 1684 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-02-xx_SMD" H 6400 1150 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-02/IRM-02-SPEC.PDF" H 6400 1450 50  0001 C CNN
+	1    6400 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4400 8850 4600
+$Comp
+L UImeasurement:HCPL-181-000E IC?
+U 1 1 5DA334F6
+P 8350 3550
+F 0 "IC?" H 8750 3815 50  0000 C CNN
+F 1 "HCPL-181-000E" H 8750 3724 50  0000 C CNN
+F 2 "SOP254P675X240-4N" H 9000 3650 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/AV02-0774EN" H 9000 3550 50  0001 L CNN
+F 4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" H 9000 3450 50  0001 L CNN "Description"
+F 5 "2.4" H 9000 3350 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 9000 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "HCPL-181-000E" H 9000 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "630-HCPL-181-000E" H 9000 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=630-HCPL-181-000E" H 9000 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6935277P" H 9000 2850 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/6935277P" H 9000 2750 50  0001 L CNN "RS Price/Stock"
+	1    8350 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA334FC
+P 7150 3300
+F 0 "R?" H 7220 3346 50  0000 L CNN
+F 1 "R" H 7220 3255 50  0000 L CNN
+F 2 "" V 7080 3300 50  0001 C CNN
+F 3 "~" H 7150 3300 50  0001 C CNN
+	1    7150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA33502
+P 7550 3300
+F 0 "R?" H 7620 3346 50  0000 L CNN
+F 1 "R" H 7620 3255 50  0000 L CNN
+F 2 "" V 7480 3300 50  0001 C CNN
+F 3 "~" H 7550 3300 50  0001 C CNN
+	1    7550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3450 7550 3550
+Wire Wire Line
+	7550 3650 7550 3850
+Text Label 7550 3850 0    50   ~ 0
+GND
+Wire Wire Line
+	7550 3150 7150 3150
+Connection ~ 7150 3150
+Wire Wire Line
+	7150 3150 6400 3150
+Text Label 6400 3150 0    50   ~ 0
+RX
+Wire Wire Line
+	7150 3850 7550 3850
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5DA5A031
+P 10900 2750
+F 0 "J?" H 10928 2726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10928 2635 50  0000 L CNN
+F 2 "" H 10900 2750 50  0001 C CNN
+F 3 "~" H 10900 2750 50  0001 C CNN
+	1    10900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2750 10700 2750
+Wire Wire Line
+	10700 2850 10600 2850
+$Comp
+L Device:LED D?
+U 1 1 5DA8EBA0
+P 9400 1100
+F 0 "D?" V 9439 983 50  0000 R CNN
+F 1 "LED" V 9348 983 50  0000 R CNN
+F 2 "" H 9400 1100 50  0001 C CNN
+F 3 "~" H 9400 1100 50  0001 C CNN
+	1    9400 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 950  9400 900 
+Wire Wire Line
+	9400 1250 9400 1300
+$Comp
+L Device:LED D?
+U 1 1 5DADDFEC
+P 9400 2000
+F 0 "D?" V 9439 1883 50  0000 R CNN
+F 1 "LED" V 9348 1883 50  0000 R CNN
+F 2 "" H 9400 2000 50  0001 C CNN
+F 3 "~" H 9400 2000 50  0001 C CNN
+	1    9400 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 2200 9800 2200
+Wire Wire Line
+	9400 2150 9400 2200
+Wire Wire Line
+	9400 1800 9400 1850
+$Comp
+L Device:LED D?
+U 1 1 5DB2C272
+P 9400 2850
+F 0 "D?" V 9439 2733 50  0000 R CNN
+F 1 "LED" V 9348 2733 50  0000 R CNN
+F 2 "" H 9400 2850 50  0001 C CNN
+F 3 "~" H 9400 2850 50  0001 C CNN
+	1    9400 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 2700 9400 2650
+Wire Wire Line
+	9400 3000 9400 3050
+$Comp
+L Device:LED D?
+U 1 1 5DB53FC8
+P 9400 3650
+F 0 "D?" V 9439 3533 50  0000 R CNN
+F 1 "LED" V 9348 3533 50  0000 R CNN
+F 2 "" H 9400 3650 50  0001 C CNN
+F 3 "~" H 9400 3650 50  0001 C CNN
+	1    9400 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 3450 9400 3500
+Wire Wire Line
+	9400 3800 9400 3850
+Wire Wire Line
+	1400 5350 1900 5350
+Wire Wire Line
+	2850 6050 2850 6700
+$Comp
+L Device:LED D?
+U 1 1 5DBDAFEA
+P 7150 3650
+F 0 "D?" V 7189 3533 50  0000 R CNN
+F 1 "LED" V 7098 3533 50  0000 R CNN
+F 2 "" H 7150 3650 50  0001 C CNN
+F 3 "~" H 7150 3650 50  0001 C CNN
+	1    7150 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 3850 7150 3800
+Wire Wire Line
+	7150 3500 7150 3450
+Wire Wire Line
+	8350 3550 8700 3550
+Text Label 8700 3550 0    50   ~ 0
+TXMCU
+Wire Wire Line
+	8350 3750 8350 3650
+Text Label 8350 3750 0    50   ~ 0
+GND
+Text Label 10800 3550 0    50   ~ 0
+RXMCU
+Wire Wire Line
+	10800 3650 10600 3650
+Text Label 10800 3650 0    50   ~ 0
+GND
+$EndSCHEMATC

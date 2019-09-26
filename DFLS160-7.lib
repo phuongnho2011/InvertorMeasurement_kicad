@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# DFLS160-7
+#
+DEF DFLS160-7 D 0 40 N N 1 L N
+F0 "D" 0 100 50 H V L BNN
+F1 "DFLS160-7" 0 -100 50 H V L BNN
+F2 "POWERDI-123" 0 0 50 H I L BNN
+F3 "DFLS160 Series 60 V 1 A Schottky Barrier Rectifier Surface Mount - POWERDI-123" 0 0 50 H I L BNN
+F4 "POWERDI®123 Diodes Inc." 0 0 50 H I L BNN
+F5 "Diodes Inc." 0 0 50 H I L BNN
+F6 "DFLS160DICT-ND" 0 0 50 H I L BNN
+F7 "https://www.digikey.com/product-detail/en/diodes-incorporated/DFLS160-7/DFLS160DICT-ND/765636?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F8 "DFLS160-7" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -50 -50 50 0 N
+P 2 0 0 10 50 0 -50 50 N
+P 2 0 0 10 50 -50 50 0 N
+P 2 0 0 10 -50 50 -50 0 N
+P 2 0 0 10 -50 0 -50 -50 N
+P 2 0 0 10 50 0 50 50 N
+P 2 0 0 6 -100 0 -50 0 N
+P 2 0 0 6 100 0 50 0 N
+X A A -200 0 100 R 40 40 0 0 P 
+X C C 200 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
