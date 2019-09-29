@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name InvertorMeasurement_kicad)(type KiCad)(uri ${KIPRJMOD}/InvertorMeasurement_kicad.pretty)(options "")(descr ""))
+)
