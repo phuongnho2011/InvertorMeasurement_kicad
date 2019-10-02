@@ -241,7 +241,7 @@ $EndComp
 Wire Wire Line
 	3300 1600 3800 1600
 $Comp
-L dk_Current-Sensors:ACS712ELCTR-20A-T_NRND U2
+L INVBackMeasurement-rescue:ACS712ELCTR-20A-T_NRND-dk_Current-Sensors U2
 U 1 1 5D857F1D
 P 2900 1500
 F 0 "U2" H 2900 2103 60  0000 C CNN
@@ -348,7 +348,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 1350 5100 1100
 $Comp
-L UImeasurement:HCPL-181-000E IC3
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC3
 U 1 1 5D8CB8DF
 P 9800 1000
 F 0 "IC3" H 10300 1250 50  0000 C CNN
@@ -419,7 +419,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 1100 10600 1100
 $Comp
-L UImeasurement:HCPL-181-000E IC4
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC4
 U 1 1 5D9D6A8A
 P 9800 1900
 F 0 "IC4" H 10200 2165 50  0000 C CNN
@@ -483,7 +483,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 2000 10600 2000
 $Comp
-L UImeasurement:HCPL-181-000E IC5
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC5
 U 1 1 5D9E47F4
 P 9800 2750
 F 0 "IC5" H 10200 3015 50  0000 C CNN
@@ -534,7 +534,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3050 9800 3050
 $Comp
-L UImeasurement:HCPL-181-000E IC6
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC6
 U 1 1 5D9F17CF
 P 9800 3550
 F 0 "IC6" H 10200 3815 50  0000 C CNN
@@ -648,7 +648,7 @@ F 3 "https://www.meanwell.com/Upload/PDF/IRM-02/IRM-02-SPEC.PDF" H 6350 850 50  
 	1    0    0    -1  
 $EndComp
 $Comp
-L UImeasurement:HCPL-181-000E IC2
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC2
 U 1 1 5DA334F6
 P 7550 2300
 F 0 "IC2" H 7950 2565 50  0000 C CNN
@@ -885,7 +885,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 4600 8400 4600
 $Comp
-L UImeasurement:dsPIC33CK256MP502 U3
+L INVBackMeasurement-rescue:dsPIC33CK256MP502-UImeasurement U3
 U 1 1 5D87DD93
 P 7650 5000
 F 0 "U3" H 7700 5815 50  0000 C CNN
@@ -908,7 +908,7 @@ AVDD
 Text Label 5750 5100 0    50   ~ 0
 3.3VDC
 $Comp
-L UImeasurement:TC1014-3.0VCT713 IC1
+L INVBackMeasurement-rescue:TC1014-3.0VCT713-UImeasurement IC1
 U 1 1 5DD378A4
 P 6650 3400
 F 0 "IC1" H 7300 3665 50  0000 C CNN
@@ -965,7 +965,7 @@ EVENT1
 Wire Wire Line
 	1400 5000 1100 5000
 $Comp
-L UImeasurement:MCP39F511 U1
+L INVBackMeasurement-rescue:MCP39F511-UImeasurement U1
 U 1 1 5D878282
 P 2050 5250
 F 0 "U1" H 2850 5950 50  0000 L CNN
@@ -1690,7 +1690,7 @@ GNDD
 Text Label 7900 6350 0    50   ~ 0
 AGND
 $Comp
-L UImeasurement:HCPL-181-000E IC7
+L INVBackMeasurement-rescue:HCPL-181-000E-UImeasurement IC7
 U 1 1 5D97412D
 P 6700 1550
 F 0 "IC7" H 7150 1800 50  0000 C CNN

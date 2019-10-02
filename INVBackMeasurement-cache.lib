@@ -289,28 +289,40 @@ X 4 4 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
+# INVBackMeasurement-rescue_ACS712ELCTR-20A-T_NRND-dk_Current-Sensors
 #
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
+DEF INVBackMeasurement-rescue_ACS712ELCTR-20A-T_NRND-dk_Current-Sensors U 0 40 Y Y 1 F N
+F0 "U" -200 300 60 H V C CNN
+F1 "INVBackMeasurement-rescue_ACS712ELCTR-20A-T_NRND-dk_Current-Sensors" 50 -400 60 H V L CNN
+F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
+F3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" 200 300 60 H I L CNN
+F4 "620-1190-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "ACS712ELCTR-20A-T" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Current Sensors" 200 700 60 H I L CNN "Family"
+F8 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/allegro-microsystems-llc/ACS712ELCTR-20A-T/620-1190-1-ND/1284607" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SENSOR CURRENT HALL 20A AC/DC" 200 1000 60 H I L CNN "Description"
+F11 "Allegro MicroSystems, LLC" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Not For New Designs" 200 1200 60 H I L CNN "Status"
 DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
+S -250 250 250 -350 1 1 0 f
+X IP+ 1 -400 100 150 R 50 50 1 1 I
+X IP+ 2 -400 0 150 R 50 50 1 1 I
+X IP- 3 -400 -100 150 R 50 50 1 1 I
+X IP- 4 -400 -200 150 R 50 50 1 1 I
+X GND 5 0 -500 150 U 50 50 1 1 W
+X FILTER 6 400 -100 150 L 50 50 1 1 U
+X VIOUT 7 400 0 150 L 50 50 1 1 O
+X VCC 8 0 400 150 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# UImeasurement_HCPL-181-000E
+# INVBackMeasurement-rescue_HCPL-181-000E-UImeasurement
 #
-DEF UImeasurement_HCPL-181-000E IC 0 30 Y Y 1 F N
+DEF INVBackMeasurement-rescue_HCPL-181-000E-UImeasurement IC 0 30 Y Y 1 F N
 F0 "IC" 650 300 50 H V L CNN
-F1 "UImeasurement_HCPL-181-000E" 650 200 50 H V L CNN
+F1 "INVBackMeasurement-rescue_HCPL-181-000E-UImeasurement" 650 200 50 H V L CNN
 F2 "SOP254P675X240-4N" 650 100 50 H I L CNN
 F3 "https://docs.broadcom.com/docs/AV02-0774EN" 650 0 50 H I L CNN
 F4 "Broadcom, HCPL-181-000E DC Input Transistor Output Optocoupler, Surface Mount, 4-Pin Mini-Flat" 650 -100 50 H I L CNN "Description"
@@ -330,11 +342,11 @@ X C 4 800 0 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
-# UImeasurement_MCP39F511
+# INVBackMeasurement-rescue_MCP39F511-UImeasurement
 #
-DEF UImeasurement_MCP39F511 U 0 40 Y Y 1 F N
+DEF INVBackMeasurement-rescue_MCP39F511-UImeasurement U 0 40 Y Y 1 F N
 F0 "U" -600 600 50 H V C CNN
-F1 "UImeasurement_MCP39F511" -800 -600 50 H V C CNN
+F1 "INVBackMeasurement-rescue_MCP39F511-UImeasurement" -800 -600 50 H V C CNN
 F2 "" -100 0 50 H I C CNN
 F3 "" -100 0 50 H I C CNN
 DRAW
@@ -371,11 +383,11 @@ X NC_4 9 0 -750 100 U 50 50 0 0 I
 ENDDRAW
 ENDDEF
 #
-# UImeasurement_TC1014-3.0VCT713
+# INVBackMeasurement-rescue_TC1014-3.0VCT713-UImeasurement
 #
-DEF UImeasurement_TC1014-3.0VCT713 IC 0 30 Y Y 1 F N
+DEF INVBackMeasurement-rescue_TC1014-3.0VCT713-UImeasurement IC 0 30 Y Y 1 F N
 F0 "IC" 1150 300 50 H V L CNN
-F1 "UImeasurement_TC1014-3.0VCT713" 1150 200 50 H V L CNN
+F1 "INVBackMeasurement-rescue_TC1014-3.0VCT713-UImeasurement" 1150 200 50 H V L CNN
 F2 "SOT95P270X145-5N" 1150 100 50 H I L CNN
 F3 "http://docs-emea.rs-online.com/webdocs/0d11/0900766b80d1123c.pdf" 1150 0 50 H I L CNN
 F4 "LDO Regulator 50mA 3.0V Shutdown SOT23-5" 1150 -100 50 H I L CNN "Description"
@@ -398,11 +410,11 @@ X VOUT 5 1300 -100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
-# UImeasurement_dsPIC33CK256MP502
+# INVBackMeasurement-rescue_dsPIC33CK256MP502-UImeasurement
 #
-DEF UImeasurement_dsPIC33CK256MP502 U 0 40 Y Y 1 F N
+DEF INVBackMeasurement-rescue_dsPIC33CK256MP502-UImeasurement U 0 40 Y Y 1 F N
 F0 "U" 0 700 50 H V C CNN
-F1 "UImeasurement_dsPIC33CK256MP502" 100 -1050 50 H V C CNN
+F1 "INVBackMeasurement-rescue_dsPIC33CK256MP502-UImeasurement" 100 -1050 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -438,32 +450,20 @@ X RB0 9 -400 -300 100 R 50 50 0 0 I
 ENDDRAW
 ENDDEF
 #
-# dk_Current-Sensors_ACS712ELCTR-20A-T_NRND
+# Switch_SW_Push
 #
-DEF dk_Current-Sensors_ACS712ELCTR-20A-T_NRND U 0 40 Y Y 1 F N
-F0 "U" -200 300 60 H V C CNN
-F1 "dk_Current-Sensors_ACS712ELCTR-20A-T_NRND" 50 -400 60 H V L CNN
-F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
-F3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" 200 300 60 H I L CNN
-F4 "620-1190-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "ACS712ELCTR-20A-T" 200 500 60 H I L CNN "MPN"
-F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
-F7 "Current Sensors" 200 700 60 H I L CNN "Family"
-F8 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/allegro-microsystems-llc/ACS712ELCTR-20A-T/620-1190-1-ND/1284607" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "SENSOR CURRENT HALL 20A AC/DC" 200 1000 60 H I L CNN "Description"
-F11 "Allegro MicroSystems, LLC" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Not For New Designs" 200 1200 60 H I L CNN "Status"
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
 DRAW
-S -250 250 250 -350 1 1 0 f
-X IP+ 1 -400 100 150 R 50 50 1 1 I
-X IP+ 2 -400 0 150 R 50 50 1 1 I
-X IP- 3 -400 -100 150 R 50 50 1 1 I
-X IP- 4 -400 -200 150 R 50 50 1 1 I
-X GND 5 0 -500 150 U 50 50 1 1 W
-X FILTER 6 400 -100 150 L 50 50 1 1 U
-X VIOUT 7 400 0 150 L 50 50 1 1 O
-X VCC 8 0 400 150 D 50 50 1 1 W
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name UImeasurement)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/UImeasurement.lib)(options "")(descr ""))
+  (lib (name INVBackMeasurement-rescue)(type Legacy)(uri ${KIPRJMOD}/INVBackMeasurement-rescue.lib)(options "")(descr ""))
 )
