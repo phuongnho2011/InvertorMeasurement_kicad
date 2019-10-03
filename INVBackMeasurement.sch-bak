@@ -1073,8 +1073,6 @@ Wire Wire Line
 	4000 6000 3850 6000
 Wire Wire Line
 	4300 6000 4400 6000
-Wire Wire Line
-	4700 6000 4850 6000
 Text Label 1050 5400 0    50   ~ 0
 PT1
 Text Label 2450 6250 1    50   ~ 0
@@ -1086,26 +1084,9 @@ AC\L_OUT
 Text Label 5300 5900 0    50   ~ 0
 AC\L
 Wire Wire Line
-	5000 5500 5300 5500
+	4950 5300 5300 5500
 Wire Wire Line
-	5000 5900 5300 5900
-Wire Wire Line
-	4850 5400 4850 5600
-Wire Wire Line
-	4700 5400 4850 5400
-Wire Wire Line
-	4850 6000 4850 5800
-$Comp
-L Device:R_Shunt R12
-U 1 1 5DAD423A
-P 5000 5700
-F 0 "R12" H 4912 5654 50  0000 R CNN
-F 1 "2m" H 4912 5745 50  0000 R CNN
-F 2 "InvertorMeasurement_kicad:ShuntMF0.0002Ohm2512" V 4930 5700 50  0001 C CNN
-F 3 "~" H 5000 5700 50  0001 C CNN
-	1    5000 5700
-	-1   0    0    1   
-$EndComp
+	4950 6100 5300 5900
 Connection ~ 3850 5700
 Wire Wire Line
 	4100 5700 3850 5700
@@ -1883,4 +1864,43 @@ Wire Wire Line
 	5400 4150 5800 4150
 Text Label 5400 4150 0    50   ~ 0
 AC\N_OUT
+$Comp
+L UImeasurement:CSNL2512FT2L00 R33
+U 1 1 5DBA8B14
+P 4950 5700
+F 0 "R33" V 4904 5805 50  0000 L CNN
+F 1 "CSNL2512FT2L00" V 4995 5805 50  0000 L CNN
+F 2 "InvertorMeasurement_kicad:ShuntMF0.0002Ohm2512" H 4950 5700 50  0001 L BNN
+F 3 "CSNL2512FT2L00" H 4950 5700 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CSNL2512FT2L00/CSNL2512FT2L00CT-ND/1646260?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4950 5700 50  0001 L BNN "Field4"
+F 5 "2512 Stackpole Electronics" H 4950 5700 50  0001 L BNN "Field5"
+F 6 "Stackpole Electronics" H 4950 5700 50  0001 L BNN "Field6"
+F 7 "CSNL2512FT2L00CT-ND" H 4950 5700 50  0001 L BNN "Field7"
+F 8 "CSNL 2512 2 W 0.004O ±1% ±50 ppm/°C Metal Foil Current Sensing Chip Resistor" H 4950 5700 50  0001 L BNN "Field8"
+	1    4950 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 5400 4950 5300
+Connection ~ 4950 5300
+Wire Wire Line
+	4700 6000 4950 6100
+Connection ~ 4950 6100
+$Comp
+L Device:R R12
+U 1 1 5DC8440C
+P 4400 5700
+F 0 "R12" H 4470 5746 50  0000 L CNN
+F 1 "2.49R" H 4470 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 5700 50  0001 C CNN
+F 3 "~" H 4400 5700 50  0001 C CNN
+	1    4400 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5550 4400 5400
+Connection ~ 4400 5400
+Wire Wire Line
+	4400 5850 4400 6000
+Connection ~ 4400 6000
 $EndSCHEMATC

@@ -594,7 +594,7 @@ TX
 Wire Wire Line
 	9400 3150 8650 3150
 Text Label 8650 2350 0    50   ~ 0
-PWD
+PWM
 Wire Wire Line
 	9400 2350 8650 2350
 Text Label 8650 1500 0    50   ~ 0
