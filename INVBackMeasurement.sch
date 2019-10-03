@@ -1073,8 +1073,6 @@ Wire Wire Line
 	4000 6000 3850 6000
 Wire Wire Line
 	4300 6000 4400 6000
-Wire Wire Line
-	4700 6000 4850 6000
 Text Label 1050 5400 0    50   ~ 0
 PT1
 Text Label 2450 6250 1    50   ~ 0
@@ -1086,26 +1084,9 @@ AC\L_OUT
 Text Label 5300 5900 0    50   ~ 0
 AC\L
 Wire Wire Line
-	5000 5500 5300 5500
+	4950 5300 5300 5500
 Wire Wire Line
-	5000 5900 5300 5900
-Wire Wire Line
-	4850 5400 4850 5600
-Wire Wire Line
-	4700 5400 4850 5400
-Wire Wire Line
-	4850 6000 4850 5800
-$Comp
-L Device:R_Shunt R12
-U 1 1 5DAD423A
-P 5000 5700
-F 0 "R12" H 4912 5654 50  0000 R CNN
-F 1 "2m" H 4912 5745 50  0000 R CNN
-F 2 "InvertorMeasurement_kicad:ShuntMF0.0002Ohm2512" V 4930 5700 50  0001 C CNN
-F 3 "~" H 5000 5700 50  0001 C CNN
-	1    5000 5700
-	-1   0    0    1   
-$EndComp
+	4950 6100 5300 5900
 Connection ~ 3850 5700
 Wire Wire Line
 	4100 5700 3850 5700
@@ -1604,23 +1585,23 @@ Wire Wire Line
 $Comp
 L Device:C C3
 U 1 1 5E143A15
-P 1200 7200
-F 0 "C3" H 1315 7246 50  0000 L CNN
-F 1 "C" H 1315 7155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1238 7050 50  0001 C CNN
-F 3 "~" H 1200 7200 50  0001 C CNN
-	1    1200 7200
+P 4500 3450
+F 0 "C3" H 4615 3496 50  0000 L CNN
+F 1 "C" H 4615 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4538 3300 50  0001 C CNN
+F 3 "~" H 4500 3450 50  0001 C CNN
+	1    4500 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E144011
-P 1650 7200
-F 0 "C4" H 1765 7246 50  0000 L CNN
-F 1 "C" H 1765 7155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1688 7050 50  0001 C CNN
-F 3 "~" H 1650 7200 50  0001 C CNN
-	1    1650 7200
+P 4950 3450
+F 0 "C4" H 5065 3496 50  0000 L CNN
+F 1 "C" H 5065 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4988 3300 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1643,14 +1624,14 @@ Wire Wire Line
 Wire Wire Line
 	6150 3400 6650 3400
 Wire Wire Line
-	1200 7350 1200 7600
+	4500 3600 4500 3850
 Wire Wire Line
-	1650 7350 1650 7600
+	4950 3600 4950 3850
 Wire Wire Line
-	1650 7050 1650 6900
-Text Label 1650 6900 0    50   ~ 0
+	4950 3300 4950 3150
+Text Label 4950 3150 0    50   ~ 0
 3.3VDC
-Text Label 1650 7600 0    50   ~ 0
+Text Label 4950 3850 0    50   ~ 0
 GNDD
 Text Label 3250 4100 0    50   ~ 0
 GNDD
@@ -1665,10 +1646,10 @@ Wire Wire Line
 Text Label 3350 4250 0    50   ~ 0
 AGND
 Wire Wire Line
-	1200 7050 1200 6900
-Text Label 1200 6900 0    50   ~ 0
+	4500 3300 4500 3150
+Text Label 4500 3150 0    50   ~ 0
 AVDD
-Text Label 1200 7600 0    50   ~ 0
+Text Label 4500 3850 0    50   ~ 0
 AGND
 $Comp
 L Device:L L5
@@ -1859,4 +1840,67 @@ Wire Wire Line
 	2200 750  1850 750 
 Connection ~ 2200 1400
 Connection ~ 1850 750 
+Wire Wire Line
+	5250 4650 5250 4950
+Connection ~ 5250 4650
+Text Label 5250 4950 0    50   ~ 0
+AC\N_OUT
+$Comp
+L Connector:Screw_Terminal_01x02 J11
+U 1 1 5DABF6D1
+P 6000 4050
+F 0 "J11" H 6080 4042 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6080 3951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm" H 6000 4050 50  0001 C CNN
+F 3 "~" H 6000 4050 50  0001 C CNN
+	1    6000 4050
+	1    0    0    -1  
+$EndComp
+Text Label 5400 4050 0    50   ~ 0
+AC\L_OUT
+Wire Wire Line
+	5400 4050 5800 4050
+Wire Wire Line
+	5400 4150 5800 4150
+Text Label 5400 4150 0    50   ~ 0
+AC\N_OUT
+$Comp
+L UImeasurement:CSNL2512FT2L00 R33
+U 1 1 5DBA8B14
+P 4950 5700
+F 0 "R33" V 4904 5805 50  0000 L CNN
+F 1 "CSNL2512FT2L00" V 4995 5805 50  0000 L CNN
+F 2 "InvertorMeasurement_kicad:ShuntMF0.0002Ohm2512" H 4950 5700 50  0001 L BNN
+F 3 "CSNL2512FT2L00" H 4950 5700 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CSNL2512FT2L00/CSNL2512FT2L00CT-ND/1646260?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4950 5700 50  0001 L BNN "Field4"
+F 5 "2512 Stackpole Electronics" H 4950 5700 50  0001 L BNN "Field5"
+F 6 "Stackpole Electronics" H 4950 5700 50  0001 L BNN "Field6"
+F 7 "CSNL2512FT2L00CT-ND" H 4950 5700 50  0001 L BNN "Field7"
+F 8 "CSNL 2512 2 W 0.004O ±1% ±50 ppm/°C Metal Foil Current Sensing Chip Resistor" H 4950 5700 50  0001 L BNN "Field8"
+	1    4950 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 5400 4950 5300
+Connection ~ 4950 5300
+Wire Wire Line
+	4700 6000 4950 6100
+Connection ~ 4950 6100
+$Comp
+L Device:R R12
+U 1 1 5DC8440C
+P 4400 5700
+F 0 "R12" H 4470 5746 50  0000 L CNN
+F 1 "2.49R" H 4470 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 5700 50  0001 C CNN
+F 3 "~" H 4400 5700 50  0001 C CNN
+	1    4400 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5550 4400 5400
+Connection ~ 4400 5400
+Wire Wire Line
+	4400 5850 4400 6000
+Connection ~ 4400 6000
 $EndSCHEMATC
